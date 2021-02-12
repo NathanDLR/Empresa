@@ -15,6 +15,8 @@ public class TestEmpresa {
         FormEmpleados form = new FormEmpleados();
         form.show();
         
+        
+        
     }
     
 }

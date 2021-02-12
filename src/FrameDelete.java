@@ -10,6 +10,7 @@
  */
 public class FrameDelete extends javax.swing.JFrame {
 
+    private static String idEmpleado = "";
     DAOEmpresa dao = new DAOEmpresa();
     
     /**
@@ -18,6 +19,10 @@ public class FrameDelete extends javax.swing.JFrame {
     public FrameDelete() {
         initComponents();
         this.show();
+    }
+    
+    public static String getInfo(){
+        return FrameDelete.idEmpleado;
     }
 
     /**
@@ -82,7 +87,7 @@ public class FrameDelete extends javax.swing.JFrame {
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
         String idEmpleado = this.jTextPane1.getText();
-        dao.deleteEmpleado(idEmpleado);
+        getInfo();
     }//GEN-LAST:event_jButton1MouseClicked
 
     /**
